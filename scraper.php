@@ -2,7 +2,7 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';           
 set_time_limit( 24 * 3600 );
-date_default_timezone_set('US/Chicago');
+//date_default_timezone_set('US/Chicago');
 
 $base_url = "http://www.groupon.es/browse/zaragoza?category=restaurantes";
 $script_tz = date_default_timezone_get();
