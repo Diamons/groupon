@@ -2,8 +2,8 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';           
 set_time_limit( 24 * 3600 );
-echo date_default_timezone_get();
-date_default_timezone_set();
+
+date_default_timezone_set(ini_get('date.timezone'));
 
 $base_url = "http://www.groupon.es/browse/zaragoza?category=restaurantes";
 $script_tz = date_default_timezone_get();
