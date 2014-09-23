@@ -3,16 +3,17 @@ require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';           
 set_time_limit( 24 * 3600 );
 
-date_default_timezone_set(ini_get('date.timezone'));
+//date_default_timezone_set(ini_get('date.timezone'));
 
 $base_url = "http://www.groupon.es/browse/zaragoza?category=restaurantes";
 $script_tz = date_default_timezone_get();
-
+/*
 if (strcmp($script_tz, ini_get('date.timezone'))){
     echo 'Script timezone differs from ini-set timezone.';
 } else {
     echo 'Script timezone and ini-set timezone match.';
 }
+*/
 $dom = new simple_html_dom();
 $dom2 = new simple_html_dom();
 
