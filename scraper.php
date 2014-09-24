@@ -5,7 +5,7 @@ set_time_limit( 24 * 3600 );
 
 //date_default_timezone_set(ini_get('date.timezone'));
 
-$base_url = "http://www.groupon.es/browse/zaragoza?category=restaurantes";
+$base_url = "http://www.groupon.com/browse/chicago?category=restaurants-and-bars";
 $script_tz = date_default_timezone_get();
 /*
 if (strcmp($script_tz, ini_get('date.timezone'))){
